@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rooftop-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="60%" stop-color="#141c42"/>
+      <stop offset="100%" stop-color="#1a2556"/>
+    </linearGradient>
+    <linearGradient id="deck-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c1810"/>
+      <stop offset="100%" stop-color="#150a06"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#rooftop-sky)"/>
+
+  <!-- Distant City Skyline Silhouettes -->
+  <g fill="#0b1126">
+    <rect x="20" y="160" width="40" height="120"/>
+    <rect x="70" y="120" width="55" height="160"/>
+    <polygon points="97,80 70,120 125,120"/>
+    <rect x="135" y="180" width="35" height="100"/>
+    <rect x="180" y="140" width="50" height="140"/>
+    <rect x="370" y="150" width="45" height="130"/>
+    <rect x="425" y="110" width="60" height="170"/>
+    <polygon points="455,70 425,110 485,110"/>
+    <rect x="495" y="165" width="40" height="115"/>
+    <rect x="545" y="135" width="45" height="145"/>
+  </g>
+
+  <!-- Glowing City Windows -->
+  <g fill="#ffe57f" opacity="0.6">
+    <rect x="75" y="130" width="6" height="8"/><rect x="85" y="130" width="6" height="8"/><rect x="105" y="130" width="6" height="8"/>
+    <rect x="75" y="150" width="6" height="8"/><rect x="95" y="150" width="6" height="8"/><rect x="105" y="150" width="6" height="8"/>
+    <rect x="190" y="155" width="6" height="8"/><rect x="205" y="155" width="6" height="8"/>
+    <rect x="435" y="125" width="6" height="8"/><rect x="450" y="125" width="6" height="8"/><rect x="465" y="125" width="6" height="8"/>
+    <rect x="435" y="145" width="6" height="8"/><rect x="465" y="145" width="6" height="8"/>
+    <rect x="555" y="150" width="6" height="8"/><rect x="570" y="150" width="6" height="8"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.75">
+    <circle cx="50" cy="40" r="1.2"/><circle cx="150" cy="30" r="1.5"/><circle cx="280" cy="45" r="1"/>
+    <circle cx="340" cy="25" r="1.8"/><circle cx="510" cy="35" r="1.2"/>
+  </g>
+
+  <!-- Rooftop Cinema Screen (Center) -->
+  <g transform="translate(230, 95)">
+    <rect x="0" y="0" width="140" height="90" rx="4" fill="#040711" stroke="#f6c453" stroke-width="1.5"/>
+    <rect x="4" y="4" width="132" height="82" rx="3" fill="#1b2a47"/>
+    <ellipse cx="70" cy="45" rx="50" ry="30" fill="#38bdf8" opacity="0.4"/>
+    <circle cx="70" cy="40" r="18" fill="#fef08a" opacity="0.8"/>
+  </g>
+
+  <!-- Glass Balustrade & Handrail -->
+  <line x1="0" y1="265" x2="600" y2="265" stroke="#94a3b8" stroke-width="3" opacity="0.5"/>
+  <rect x="0" y="265" width="600" height="25" fill="#38bdf8" opacity="0.08"/>
+
+  <!-- Rooftop Timber Deck -->
+  <rect x="0" y="275" width="600" height="125" fill="url(#deck-wood)"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#0d0503" stroke-width="1.5"/>
+  <line x1="0" y1="335" x2="600" y2="335" stroke="#0d0503" stroke-width="1.5"/>
+  <line x1="0" y1="370" x2="600" y2="370" stroke="#0d0503" stroke-width="1.5"/>
+
+  <!-- Hanging Bistro Fairy Lights -->
+  <path d="M 0 50 Q 150 95, 300 70 Q 450 95, 600 50" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="2,16" fill="none"/>
+  <g fill="#fde047">
+    <circle cx="75" cy="72" r="3.5"/><circle cx="150" cy="85" r="3.5"/><circle cx="225" cy="80" r="3.5"/>
+    <circle cx="375" cy="80" r="3.5"/><circle cx="450" cy="85" r="3.5"/><circle cx="525" cy="72" r="3.5"/>
+  </g>
+
+  <!-- Lounge Chairs & Cocktail Tables -->
+  <g transform="translate(60, 285)">
+    <rect x="15" y="30" width="35" height="15" rx="4" fill="#334155"/>
+    <polygon points="12,30 25,5 30,5 20,30" fill="#475569"/>
+    <!-- Cocktail Glass -->
+    <polygon points="65,30 75,30 71,45 69,45" fill="#e2e8f0"/>
+    <circle cx="70" cy="27" r="4" fill="#f43f5e"/>
+  </g>
+
+  <g transform="translate(460, 285)">
+    <rect x="15" y="30" width="35" height="15" rx="4" fill="#334155"/>
+    <polygon points="12,30 25,5 30,5 20,30" fill="#475569"/>
+    <!-- Wine Bottle & Glass -->
+    <rect x="65" y="25" width="5" height="18" fill="#10b981"/>
+    <circle cx="76" cy="32" r="3" fill="#fbbf24"/>
+  </g>
+</svg>
+

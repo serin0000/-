@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="twilight-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12082b"/>
+      <stop offset="45%" stop-color="#3b1554"/>
+      <stop offset="75%" stop-color="#7a2b6a"/>
+      <stop offset="100%" stop-color="#38103c"/>
+    </linearGradient>
+    <radialGradient id="lamp-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe680" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffb833" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffb833" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow-lala" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="560" fill="url(#twilight-sky)"/>
+
+  <!-- Distant City Grid Twinkles -->
+  <g fill="#ffe082" opacity="0.6">
+    <circle cx="50" cy="330" r="1.5"/>
+    <circle cx="75" cy="340" r="1"/>
+    <circle cx="110" cy="335" r="2"/>
+    <circle cx="140" cy="345" r="1.5"/>
+    <circle cx="180" cy="330" r="1.2"/>
+    <circle cx="230" cy="340" r="2"/>
+    <circle cx="280" cy="335" r="1"/>
+    <circle cx="320" cy="340" r="1.8"/>
+    <circle cx="360" cy="330" r="1.5"/>
+    <circle cx="90" cy="355" r="1"/>
+    <circle cx="210" cy="350" r="1.5"/>
+  </g>
+
+  <!-- Stars in Upper Sky -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="60" cy="60" r="1.5"/>
+    <circle cx="140" cy="90" r="1"/>
+    <circle cx="220" cy="40" r="2"/>
+    <circle cx="310" cy="80" r="1.5"/>
+    <circle cx="350" cy="50" r="1.2"/>
+    <circle cx="80" cy="150" r="1.8"/>
+    <circle cx="290" cy="160" r="1"/>
+    <circle cx="370" cy="180" r="1.5"/>
+  </g>
+
+  <!-- Hill Silhouette -->
+  <path d="M0 380 Q 180 320, 400 370 L 400 560 L 0 560 Z" fill="#0d0417"/>
+
+  <!-- Vintage Street Lamp -->
+  <g transform="translate(110, 200)">
+    <!-- Light beam glow -->
+    <circle cx="15" cy="40" r="55" fill="url(#lamp-glow)" filter="url(#glow-lala)"/>
+    <!-- Lamp post -->
+    <rect x="13" y="45" width="4" height="150" fill="#05010a"/>
+    <!-- Lamp head -->
+    <polygon points="5,45 25,45 20,30 10,30" fill="#05010a"/>
+    <polygon points="8,44 22,44 19,33 11,33" fill="#fff2a8"/>
+    <circle cx="15" cy="27" r="3" fill="#05010a"/>
+    <path d="M5 45 C 5 55, 25 55, 25 45" fill="none" stroke="#05010a" stroke-width="2"/>
+  </g>
+
+  <!-- Dancing Couple Silhouette -->
+  <g transform="translate(190, 240)" fill="#f8fafc">
+    <!-- Man silhouette -->
+    <circle cx="25" cy="50" r="8"/>
+    <path d="M18 58 L32 58 L36 90 L28 115 L22 115 L18 90 Z"/>
+    <line x1="20" y1="65" x2="5" y2="85" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+    <line x1="30" y1="65" x2="55" y2="60" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+    <!-- Woman silhouette (yellow dress aesthetic) -->
+    <circle cx="68" cy="48" r="7" fill="#ffd54f"/>
+    <!-- Dress flare -->
+    <path d="M62 56 L74 56 L85 92 L50 92 Z" fill="#ffd54f"/>
+    <line x1="60" y1="92" x2="55" y2="115" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    <line x1="75" y1="92" x2="82" y2="115" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    <line x1="63" y1="62" x2="55" y2="60" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+    <line x1="73" y1="62" x2="90" y2="45" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Title & Credits -->
+  <rect x="0" y="410" width="400" height="150" fill="#08020ecc"/>
+  <text x="200" y="450" font-family="'Cinzel', 'Playfair Display', serif" font-size="30" font-weight="800" fill="#f8fafc" letter-spacing="4" text-anchor="middle">LA LA LAND</text>
+  <text x="200" y="480" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="600" fill="#f6c453" letter-spacing="6" text-anchor="middle">愛樂之城 ｜ 浪漫之夜</text>
+  <text x="200" y="508" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#cbd5e1" letter-spacing="2" text-anchor="middle">達米恩・查澤雷 導演 ・ 六座奧斯卡得獎巨作</text>
+  <line x1="80" y1="522" x2="320" y2="522" stroke="#f6c453" stroke-width="0.8" opacity="0.5"/>
+</svg>
+

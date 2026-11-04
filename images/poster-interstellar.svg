@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-space" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050714"/>
+      <stop offset="50%" stop-color="#0a1128"/>
+      <stop offset="100%" stop-color="#1c1033"/>
+    </linearGradient>
+    <radialGradient id="accretion-glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ffd56b" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#ff9900" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#ff4400" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core-shadow" cx="50%" cy="45%" r="35%">
+      <stop offset="60%" stop-color="#030408"/>
+      <stop offset="85%" stop-color="#0a0e1c"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="glow-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="560" fill="url(#bg-space)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="35" cy="45" r="1"/>
+    <circle cx="85" cy="120" r="1.5"/>
+    <circle cx="160" cy="50" r="1"/>
+    <circle cx="240" cy="95" r="2"/>
+    <circle cx="320" cy="40" r="1"/>
+    <circle cx="370" cy="130" r="1.2"/>
+    <circle cx="45" cy="220" r="1"/>
+    <circle cx="120" cy="300" r="1.5"/>
+    <circle cx="340" cy="280" r="1.2"/>
+    <circle cx="290" cy="360" r="1"/>
+    <circle cx="70" cy="410" r="1.5"/>
+    <circle cx="360" cy="460" r="1"/>
+    <circle cx="190" cy="500" r="1"/>
+  </g>
+
+  <!-- Black Hole Accretion Disk -->
+  <ellipse cx="200" cy="250" rx="160" ry="38" fill="url(#accretion-glow)" filter="url(#glow-blur)" transform="rotate(-12 200 250)"/>
+  <ellipse cx="200" cy="250" rx="130" ry="85" fill="none" stroke="#ffbb33" stroke-width="4" opacity="0.8" filter="url(#glow-blur)" transform="rotate(-12 200 250)"/>
+  <ellipse cx="200" cy="250" rx="145" ry="14" fill="#fff5d9" filter="url(#glow-blur)" transform="rotate(-12 200 250)"/>
+
+  <!-- Event Horizon Center -->
+  <circle cx="200" cy="245" r="54" fill="#020306"/>
+  <ellipse cx="200" cy="245" rx="55" ry="55" fill="none" stroke="#ffe399" stroke-width="2" opacity="0.9"/>
+
+  <!-- Spaceship Silhouette -->
+  <g transform="translate(140, 180) scale(0.6)" fill="#ffffff" opacity="0.95">
+    <polygon points="50,15 40,45 60,45"/>
+    <rect x="47" y="45" width="6" height="35" rx="3"/>
+    <polygon points="40,65 15,75 40,75"/>
+    <polygon points="60,65 85,75 60,75"/>
+    <circle cx="50" cy="85" r="5" fill="#33ccff" filter="url(#glow-blur)"/>
+  </g>
+
+  <!-- Film Festival Laurels & Text -->
+  <rect x="0" y="400" width="400" height="160" fill="url(#core-shadow)"/>
+  <text x="200" y="445" font-family="'Cinzel', 'Playfair Display', serif" font-size="28" font-weight="800" fill="#f8fafc" letter-spacing="4" text-anchor="middle">INTERSTELLAR</text>
+  <text x="200" y="475" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="600" fill="#f6c453" letter-spacing="6" text-anchor="middle">星際效應 ｜ 經典重映</text>
+  <text x="200" y="505" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#94a3b8" letter-spacing="2" text-anchor="middle">克里斯多福・諾蘭 導演作品 ・ 4K 巨幕重現</text>
+  <line x1="80" y1="520" x2="320" y2="520" stroke="#f6c453" stroke-width="0.8" opacity="0.5"/>
+</svg>
+

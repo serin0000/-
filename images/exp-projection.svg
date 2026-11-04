@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <radialGradient id="p-beam" cx="15%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#64dfdf" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#48bfe3" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7209b7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="500" height="350" rx="16" fill="url(#p-bg)"/>
+
+  <!-- Projector Beam cone -->
+  <polygon points="60,95 460,40 460,260 60,115" fill="url(#p-beam)"/>
+
+  <!-- Projector Device on Tripod -->
+  <g transform="translate(30, 85)">
+    <!-- Projector Box -->
+    <rect x="0" y="0" width="60" height="32" rx="4" fill="#0f172a" stroke="#f6c453" stroke-width="1.5"/>
+    <!-- Glowing Lens -->
+    <circle cx="58" cy="16" r="10" fill="#38bdf8"/>
+    <circle cx="58" cy="16" r="5" fill="#ffffff"/>
+    <!-- Tripod Legs -->
+    <line x1="15" y1="32" x2="5" y2="85" stroke="#64748b" stroke-width="3"/>
+    <line x1="30" y1="32" x2="30" y2="85" stroke="#64748b" stroke-width="3"/>
+    <line x1="45" y1="32" x2="55" y2="85" stroke="#64748b" stroke-width="3"/>
+  </g>
+
+  <!-- Big 4K Outdoor Screen -->
+  <g transform="translate(320, 60)">
+    <rect x="0" y="0" width="150" height="180" rx="6" fill="#030712" stroke="#f6c453" stroke-width="2"/>
+    <rect x="6" y="6" width="138" height="168" rx="4" fill="#0284c7" opacity="0.3"/>
+    <!-- Visual content inside screen: Planet & Galaxy -->
+    <circle cx="75" cy="85" r="40" fill="#f8fafc" opacity="0.9"/>
+    <ellipse cx="75" cy="85" rx="60" ry="12" fill="none" stroke="#fbbf24" stroke-width="2" transform="rotate(-20 75 85)"/>
+  </g>
+
+  <!-- High-Fi Noise Canceling Headphones floating with audio waves -->
+  <g transform="translate(190, 190)">
+    <!-- Headband -->
+    <path d="M 15 50 A 45 45 0 0 1 105 50" fill="none" stroke="#f6c453" stroke-width="6" stroke-linecap="round"/>
+    <!-- Earcups -->
+    <rect x="5" y="45" width="22" height="36" rx="10" fill="#1e293b" stroke="#f6c453" stroke-width="2"/>
+    <rect x="93" y="45" width="22" height="36" rx="10" fill="#1e293b" stroke="#f6c453" stroke-width="2"/>
+    <!-- Audio Wave lines -->
+    <path d="M -5 50 A 20 20 0 0 0 -5 75" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 125 50 A 20 20 0 0 1 125 75" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Star Twinkles -->
+  <circle cx="160" cy="50" r="1.5" fill="#ffffff"/>
+  <circle cx="270" cy="35" r="2" fill="#fde047"/>
+  <circle cx="230" cy="110" r="1" fill="#ffffff"/>
+</svg>
+

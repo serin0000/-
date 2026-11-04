@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="100%" height="100%">
+  <defs>
+    <!-- Blade Runner 2049 Iconic Dust & Neon Gradients -->
+    <linearGradient id="br-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e0a02"/>
+      <stop offset="35%" stop-color="#7c2d12"/>
+      <stop offset="70%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+    <radialGradient id="hologram-glow" cx="65%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="br-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Orange Dust Storm Sky Background -->
+  <rect width="400" height="560" fill="url(#br-sky)"/>
+
+  <!-- Distant Ruined Colossal Statues / Brutalist Monoliths -->
+  <g fill="#2e1005" opacity="0.85">
+    <polygon points="40,240 100,160 140,240 130,360 50,360"/>
+    <polygon points="120,200 170,120 210,210 190,360 110,360"/>
+    <!-- Giant Fallen Head Sculpture Silhouette -->
+    <path d="M 230 350 Q 250 220, 340 250 Q 380 320, 360 360 Z"/>
+    <rect x="0" y="350" width="400" height="210" fill="#1b0802"/>
+  </g>
+
+  <!-- Giant Holographic Woman (Joi) Silhouette with Magenta-Cyan Glow -->
+  <g transform="translate(180, 80)" filter="url(#br-blur)" opacity="0.6">
+    <ellipse cx="80" cy="110" rx="90" ry="90" fill="url(#hologram-glow)"/>
+    <!-- Hologram Scanlines -->
+    <path d="M 0 50 L 160 50 M 0 70 L 160 70 M 0 90 L 160 90 M 0 110 L 160 110 M 0 130 L 160 130 M 0 150 L 160 150" stroke="#38bdf8" stroke-width="1.2" opacity="0.4"/>
+    <!-- Hologram Face / Figure Profile -->
+    <path d="M 80 40 Q 110 50, 105 80 Q 100 110, 85 130 Q 95 160, 110 200 L 50 200 Q 65 150, 70 120 Z" fill="#ec4899" opacity="0.5"/>
+  </g>
+
+  <!-- Flying Spinner Vehicle Silhouette in Mist -->
+  <g transform="translate(50, 100) scale(0.65)" fill="#0f0502">
+    <polygon points="30,40 110,30 150,55 20,55"/>
+    <!-- Headlight Cone beam -->
+    <polygon points="150,45 280,30 280,75 150,55" fill="#fde047" opacity="0.35"/>
+    <circle cx="150" cy="50" r="6" fill="#ffffff"/>
+  </g>
+
+  <!-- Officer K Silhouette Walking with Coat Collar Up into Dust -->
+  <g transform="translate(100, 270)">
+    <!-- Shadow on ground -->
+    <ellipse cx="28" cy="88" rx="35" ry="6" fill="#090301" opacity="0.7"/>
+    <!-- Trenchcoat Body -->
+    <path d="M 18 20 L 38 20 L 48 85 L 8 85 Z" fill="#090301"/>
+    <!-- Head & Upright Fur Collar -->
+    <circle cx="28" cy="12" r="6" fill="#090301"/>
+    <polygon points="16,14 22,24 14,24" fill="#090301"/>
+    <polygon points="40,14 34,24 42,24" fill="#090301"/>
+    <!-- Legs -->
+    <line x1="20" y1="85" x2="16" y2="108" stroke="#090301" stroke-width="5" stroke-linecap="round"/>
+    <line x1="34" y1="85" x2="38" y2="108" stroke="#090301" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ambient Dust / Fire Embers Particles -->
+  <g fill="#fed7aa" opacity="0.8">
+    <circle cx="45" cy="180" r="1.5"/><circle cx="95" cy="220" r="1.2"/>
+    <circle cx="160" cy="190" r="2"/><circle cx="240" cy="140" r="1.5"/>
+    <circle cx="310" cy="190" r="2.2"/><circle cx="350" cy="110" r="1"/>
+    <circle cx="70" cy="300" r="1.8"/><circle cx="280" cy="280" r="1.5"/>
+  </g>
+
+  <!-- Lower Dark Overlay for Typography -->
+  <rect x="0" y="410" width="400" height="150" fill="#0a0301ee"/>
+
+  <!-- Title & Credits -->
+  <text x="200" y="448" font-family="'Cinzel', 'Playfair Display', serif" font-size="25" font-weight="800" fill="#f8fafc" letter-spacing="4" text-anchor="middle">BLADE RUNNER 2049</text>
+  <text x="200" y="478" font-family="'Noto Sans TC', sans-serif" font-size="14" font-weight="600" fill="#f6c453" letter-spacing="6" text-anchor="middle">銀翼殺手2049 ｜ 賽博龐克傳奇</text>
+  <text x="200" y="506" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#fed7aa" letter-spacing="2" text-anchor="middle">丹尼・維勒納夫 導演 ・ 奧斯卡最佳攝影大獎</text>
+  <line x1="80" y1="522" x2="320" y2="522" stroke="#ea580c" stroke-width="0.8" opacity="0.6"/>
+</svg>

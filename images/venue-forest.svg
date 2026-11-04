@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="forest-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020808"/>
+      <stop offset="50%" stop-color="#061f1c"/>
+      <stop offset="100%" stop-color="#0a2e26"/>
+    </linearGradient>
+    <radialGradient id="lantern-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#forest-sky)"/>
+
+  <!-- Starry Gaps in Forest Canopy -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="260" cy="40" r="1.5"/><circle cx="300" cy="25" r="1.2"/>
+    <circle cx="340" cy="50" r="1.8"/><circle cx="280" cy="70" r="1"/>
+  </g>
+
+  <!-- Tall Pine Trees Left & Right Framing -->
+  <g fill="#04120e">
+    <polygon points="60,30 20,180 100,180"/>
+    <polygon points="60,140 10,280 110,280"/>
+    <rect x="52" y="280" width="16" height="120" fill="#020806"/>
+
+    <polygon points="540,30 500,180 580,180"/>
+    <polygon points="540,140 490,280 590,280"/>
+    <rect x="532" y="280" width="16" height="120" fill="#020806"/>
+
+    <!-- Midground Trees -->
+    <polygon points="140,80 105,210 175,210" opacity="0.8"/>
+    <polygon points="460,80 425,210 495,210" opacity="0.8"/>
+  </g>
+
+  <!-- Hanging Twinkle Lights across trees -->
+  <path d="M 60 140 Q 200 210, 300 170 Q 400 210, 540 140" stroke="#fde047" stroke-width="1.2" stroke-dasharray="3,18" fill="none"/>
+  <g fill="#fde047">
+    <circle cx="120" cy="165" r="3"/><circle cx="180" cy="183" r="3.5"/><circle cx="240" cy="180" r="3"/>
+    <circle cx="360" cy="180" r="3"/><circle cx="420" cy="183" r="3.5"/><circle cx="480" cy="165" r="3"/>
+  </g>
+
+  <!-- Intimate Forest Screen -->
+  <g transform="translate(200, 100)">
+    <rect x="0" y="0" width="200" height="125" rx="5" fill="#030907" stroke="#f6c453" stroke-width="2"/>
+    <rect x="5" y="5" width="190" height="115" rx="3" fill="#132a26"/>
+    <!-- Projected Film Still: Moonlit Forest Scene -->
+    <ellipse cx="100" cy="62" rx="70" ry="40" fill="#34d399" opacity="0.3"/>
+    <circle cx="100" cy="50" r="22" fill="#fef9c3"/>
+  </g>
+
+  <!-- Forest Ground & Mossy Mounds -->
+  <path d="M 0 290 Q 300 265, 600 290 L 600 400 L 0 400 Z" fill="#061a14"/>
+
+  <!-- Campfire / Lantern Glow Center -->
+  <circle cx="300" cy="335" r="50" fill="url(#lantern-light)"/>
+  <!-- Vintage Brass Lantern -->
+  <g transform="translate(290, 315)">
+    <rect x="4" y="10" width="12" height="20" rx="3" fill="#fbbf24"/>
+    <polygon points="1,10 19,10 10,2" fill="#78350f"/>
+    <rect x="3" y="30" width="14" height="4" fill="#78350f"/>
+    <path d="M 5 5 Q 10 -4, 15 5" stroke="#78350f" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Wooden Log & Cushions Seating -->
+  <g transform="translate(140, 315)">
+    <!-- Log bench -->
+    <rect x="0" y="20" width="75" height="18" rx="6" fill="#451a03"/>
+    <!-- Warm Throw Pillow -->
+    <ellipse cx="25" cy="18" rx="14" ry="9" fill="#f97316"/>
+  </g>
+
+  <g transform="translate(385, 315)">
+    <rect x="0" y="20" width="75" height="18" rx="6" fill="#451a03"/>
+    <ellipse cx="50" cy="18" rx="14" ry="9" fill="#065f46"/>
+  </g>
+</svg>
+
